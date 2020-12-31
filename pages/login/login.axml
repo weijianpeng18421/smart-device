@@ -1,3 +1,14 @@
-<view>
-  New Page
+<view class="content">
+  <tabs tabs="{{tabs}}" tabsName="activeTab" onTabClick="handleTabClick" onChange="handleTabChange" onPlusClick="handlePlusClick" activeTab="{{activeTab}}"
+  tabBarBackgroundColor="" tabBarUnderlineHeight="3px" tabBarUnderlineColor="#ffffff" tabBarActiveTextColor="#ffffff" tabBarInactiveTextColor="#ffffff">
+    <block a:for="{{tabs}}">
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:if="{{index === 0}}">
+        <view class="tab-content">{{item.title}}</view>
+      </tab-content>
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 1}}">
+        <view class="tab-content">{{item.title}}</view>
+      </tab-content>
+      <!--<tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:else><view class="tab-content">content of {{item.title}}</view></tab-content> -->
+    </block>
+  </tabs>
 </view>
