@@ -1,0 +1,14 @@
+{
+  "defaultTitle": "Steps",
+  "usingComponents": {
+    "steps": "mini-ali-ui/es/steps/index",
+    "am-switch": "mini-ali-ui/es/am-switch/index",
+    "am-tag": "mini-ali-ui/es/tag/index",
+    "am-filter": "mini-ali-ui/es/filter/index",
+    "filter-item": "mini-ali-ui/es/filter/filter-item/index",
+    "am-icon": "mini-ali-ui/es/am-icon/index",
+    "am-loading": "mini-ali-ui/es/loading/index",
+    "am-calendar": "mini-ali-ui/es/calendar/index",
+    "am-stepper": "mini-ali-ui/es/stepper/index"
+  }
+}
