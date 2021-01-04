@@ -1,5 +1,7 @@
 {
   "pages": [
+    "pages/work/work",
+    "pages/my/my",
     "pages/company/company",
     "pages/register/register",
     "pages/login/login",
@@ -7,5 +9,24 @@
   ],
   "window": {
     "defaultTitle": "道路维修上报"
+  },
+  "tabBar": {
+    "textColor": "#dddddd",
+    "selectedColor": "#49a9ee",
+    "backgroundColor": "#ffffff",
+    "items": [
+      {
+        "pagePath": "pages/work/work",
+        "name": "施工",
+        "icon": "./static/work-01.png",
+        "activeIcon": "./static/work-02.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "name": "我的",
+        "icon": "./static/my-01.png",
+        "activeIcon": "./static/my-02.png"
+      }
+    ]
   }
 }
