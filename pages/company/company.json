@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "input-item": "mini-ali-ui/es/input-item/index",
+    "verify-code": "mini-ali-ui/es/verify-code/index",
+    "long-password": "mini-ali-ui/es/long-password/index",
+    "flex": "mini-ali-ui/es/flex/index",
+    "flex-item": "mini-ali-ui/es/flex/flex-item/index"
+  }
+}
