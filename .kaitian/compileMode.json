@@ -1,0 +1,9 @@
+{
+  "current": null,
+  "modes": [
+    {
+      "title": "login",
+      "page": "pages/login/login"
+    }
+  ]
+}

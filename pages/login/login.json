@@ -7,6 +7,8 @@
     "picker-item": "mini-ali-ui/es/picker-item/index",
     "verify-code": "mini-ali-ui/es/verify-code/index",
     "multi-liner": "mini-ali-ui/es/multi-liner/index",
-    "long-password": "mini-ali-ui/es/long-password/index"
+    "long-password": "mini-ali-ui/es/long-password/index",
+    "flex": "mini-ali-ui/es/flex/index",
+    "flex-item": "mini-ali-ui/es/flex/flex-item/index"
   }
 }

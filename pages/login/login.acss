@@ -35,10 +35,61 @@
 }
 
 .btn-login {
-  margin-top: 25px;
+  margin: 35px 0;
   border-radius: 5px;
+  background: linear-gradient(to bottom, rgb(58, 116, 241), #6799FE);
+  box-shadow: 8px 6px 20px #6799FE, inset 5px -5px 30px rgb(58, 116, 241);
 }
 
 .am-long-password-item {
   padding-left: 0;
+}
+
+.item-margin {
+  margin-top: 30px;
+}
+
+.forget-registered {
+  display: flex;
+  width: 100px;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 25px 0;
+}
+
+.style-forget {
+  position: absolute;
+  left: 70px;
+}
+
+.style-forget:active {
+  color: #dbdbdb;
+}
+
+.style-registered {
+  position: absolute;
+  right: 70px;
+}
+
+.style-registered:active {
+  color: #dbdbdb;
+}
+
+.ali-login {
+  margin-top: 40px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.icon-ali {
+  width: 40px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 7.5px;
+}
+
+.icon-ali:active {
+  width: 42px;
+  height: 42px;
+  transition: 0.2s;
 }

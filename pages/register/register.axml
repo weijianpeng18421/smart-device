@@ -1,0 +1,32 @@
+<view class="content">
+  <view class="title">
+    注册
+  </view>
+  <view class="bg-white">
+    <view class="item-margin">
+      <view style="margin-top: 10px;" />
+      <view class="input-label">手机号</view>
+      <view style="margin-top: 10px;" />
+      <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+    </view>
+    <view class="item-margin">
+      <view style="margin-top: 10px;" />
+      <view class="input-label">验证码</view>
+      <view style="margin-top: 10px;" />
+      <verify-code data-field="verifyCode" onInput="onItemInput" value="{{verifyCode}}" label="" onClear="onClear" countDown="{{60}}" onSend="onSend"></verify-code>
+    </view>
+    <view class="item-margin">
+      <view style="margin-top: 10px;" />
+      <view class="input-label">密码</view>
+      <view style="margin-top: 10px;" />
+      <long-password placeholder="请输入密码" value="{{longPassword}}" clear="{{true}}" onInput="onInputPassword" onClear="onClearPassword" />
+    </view>
+    <view class="item-margin">
+      <view style="margin-top: 10px;" />
+      <view class="input-label">确认密码</view>
+      <view style="margin-top: 10px;" />
+      <long-password placeholder="请确认密码" value="{{againPassword}}" clear="{{true}}" onInput="onAgainInputPassword" onClear="onAgainClearPassword" />
+    </view>
+    <button class="btn-login" type="primary" onTap="onTest">下 一 步</button>
+  </view>
+</view>

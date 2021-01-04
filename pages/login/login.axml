@@ -3,13 +3,12 @@
     <block a:for="{{tabs}}">
       <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:if="{{index === 0}}">
         <view class="tab-content">
-          <view>
-            <view style="margin-top: 10px;" />
+          <view class="item-margin">
             <view>手机号</view>
             <view style="margin-top: 10px;" />
             <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
           </view>
-          <view>
+          <view class="item-margin">
             <view style="margin-top: 10px;" />
             <view>验证码</view>
             <view style="margin-top: 10px;" />
@@ -20,15 +19,14 @@
       </tab-content>
       <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 1}}">
         <view class="tab-content">
-          <view>
-            <view style="margin-top: 10px;" />
+          <view class="item-margin">
             <view>手机号</view>
             <view style="margin-top: 10px;" />
             <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
           </view>
-          <view>
+          <view class="item-margin">
             <view style="margin-top: 10px;" />
-            <view >长密码框</view>
+            <view >密码</view>
             <view style="margin-top: 10px;" />
             <long-password placeholder="请输入密码" value="{{longPassword}}" clear="{{true}}" onInput="onInputPassword" onClear="onClearPassword" />
           </view>
@@ -37,4 +35,22 @@
       </tab-content>
     </block>
   </tabs>
+  <view class="forget-registered">
+    <view class="style-forget">
+    忘记密码
+    </view>
+    <view class="style-registered">
+    立即注册
+    </view>
+  </view>
+  <view class="ali-login">
+    <flex justify="center">
+      <view class="placeholder inline">支付宝一键登录</view>
+    </flex>
+    <flex justify="center">
+      <view class="placeholder inline">
+        <image mode="scaleToFill" class="icon-ali" src="../../static/ali.jpg"/>
+      </view>
+    </flex>
+  </view>
 </view>
