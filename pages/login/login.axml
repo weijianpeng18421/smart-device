@@ -1,14 +1,40 @@
 <view class="content">
-  <tabs tabs="{{tabs}}" tabsName="activeTab" onTabClick="handleTabClick" onChange="handleTabChange" onPlusClick="handlePlusClick" activeTab="{{activeTab}}"
-  tabBarBackgroundColor="" tabBarUnderlineHeight="3px" tabBarUnderlineColor="#ffffff" tabBarActiveTextColor="#ffffff" tabBarInactiveTextColor="#ffffff">
+  <tabs tabs="{{tabs}}" tabsName="activeTab" onTabClick="handleTabClick" onChange="handleTabChange" onPlusClick="handlePlusClick" activeTab="{{activeTab}}" tabBarBackgroundColor="" tabBarUnderlineHeight="3px" tabBarUnderlineColor="#ffffff" tabBarActiveTextColor="#ffffff" tabBarInactiveTextColor="#ffffff">
     <block a:for="{{tabs}}">
       <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:if="{{index === 0}}">
-        <view class="tab-content">{{item.title}}</view>
+        <view class="tab-content">
+          <view>
+            <view style="margin-top: 10px;" />
+            <view>手机号</view>
+            <view style="margin-top: 10px;" />
+            <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+          </view>
+          <view>
+            <view style="margin-top: 10px;" />
+            <view>验证码</view>
+            <view style="margin-top: 10px;" />
+            <verify-code data-field="verifyCode" onInput="onItemInput" value="{{verifyCode}}" label="" onClear="onClear" countDown="{{60}}" onSend="onSend"></verify-code>
+          </view>
+          <button class="btn-login" type="primary" onTap="onTest">登 录</button>
+        </view>
       </tab-content>
       <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 1}}">
-        <view class="tab-content">{{item.title}}</view>
+        <view class="tab-content">
+          <view>
+            <view style="margin-top: 10px;" />
+            <view>手机号</view>
+            <view style="margin-top: 10px;" />
+            <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+          </view>
+          <view>
+            <view style="margin-top: 10px;" />
+            <view >长密码框</view>
+            <view style="margin-top: 10px;" />
+            <long-password placeholder="请输入密码" value="{{longPassword}}" clear="{{true}}" onInput="onInputPassword" onClear="onClearPassword" />
+          </view>
+          <button class="btn-login" type="primary" onTap="onTest">登 录</button>
+        </view>
       </tab-content>
-      <!--<tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:else><view class="tab-content">content of {{item.title}}</view></tab-content> -->
     </block>
   </tabs>
 </view>

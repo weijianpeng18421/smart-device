@@ -1,6 +1,12 @@
 {
   "usingComponents": {
     "tabs": "mini-ali-ui/es/tabs/index",
-    "tab-content": "mini-ali-ui/es/tabs/tab-content/index"
+    "tab-content": "mini-ali-ui/es/tabs/tab-content/index",
+    "list": "mini-ali-ui/es/list/index",
+    "input-item": "mini-ali-ui/es/input-item/index",
+    "picker-item": "mini-ali-ui/es/picker-item/index",
+    "verify-code": "mini-ali-ui/es/verify-code/index",
+    "multi-liner": "mini-ali-ui/es/multi-liner/index",
+    "long-password": "mini-ali-ui/es/long-password/index"
   }
 }
