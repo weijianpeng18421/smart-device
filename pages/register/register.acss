@@ -26,7 +26,7 @@
 
 .input-label {
   font-weight: bolder;
-  margin-left: 12rpx;
+  /* margin-left: 12rpx; */
 }
 
 .am-input-item {
@@ -43,4 +43,16 @@
 
 .am-verify-code-item {
   padding-left: 0;
+}
+
+.am-input-content {
+  color: #919191;
+}
+
+.am-verify-code-content {
+  color: #919191;
+}
+
+.am-long-password-content {
+  color: #919191;
 }

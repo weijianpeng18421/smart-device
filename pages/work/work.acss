@@ -3,11 +3,11 @@
   align-items: center;
   padding: 40rpx;
   box-sizing: border-box;
-  height: 50%;
+  /* height: 80vh; */
 }
 
 .content {
-  margin-top: 20%;
+  margin-top: 5vh;
 }
 
 .am-tabs-content-wrap {
@@ -34,6 +34,14 @@
   padding-left: 0;
 }
 
+.am-input-content {
+  color: #c0c0c0;
+}
+
+.am-verify-code-content {
+  color: #c0c0c0;
+}
+
 .btn-login {
   margin: 35px 0;
   border-radius: 5px;
@@ -42,10 +50,83 @@
 }
 
 .item-margin {
-  margin-top: 30rpx;
+  margin-top: 10rpx;
 }
 
 .input-label {
   font-weight: bolder;
-  margin-left: 12rpx;
+  font-size: 25rpx;
+  /* margin-left: 12rpx; */
 }
+
+.am-input-line {
+  min-height: 70rpx;
+}
+
+.am-input-content {
+  font-size: 25rpx;
+}
+
+.am-verify-code-line {
+  min-height: 70rpx;
+  /* font-size: 20rpx; */
+}
+
+.am-verify-code-content {
+  font-size: 25rpx;
+}
+
+/* 施工时间段 */
+
+.time-period {
+  background-image: url('../../static/period.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 55rpx;
+  width: 55rpx;
+}
+
+.map-address {
+  background-image: url('../../static/address.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 55rpx;
+  width: 55rpx;
+}
+
+.am-input-content {
+  color: #919191;
+}
+
+.am-verify-code-content {
+  color: #919191;
+}
+
+.am-long-password-content {
+  color: #919191;
+}
+
+/******************************************************** 以下底部弹窗样式 ********************************************************/
+
+.box.bottom {
+  height: 800rpx;
+}
+
+.box {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.am-popup-mask {
+  z-index: 1;
+}
+
+.am-popup-content {
+  z-index: 1;
+}
+
+/******************************************************** 以上底部弹窗样式 ********************************************************/

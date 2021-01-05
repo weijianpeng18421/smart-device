@@ -5,6 +5,39 @@
         <view class="tab-content">
           <view class="item-margin">
             <view class="input-label">单位名称</view>
+            <input-item placeholder="请输入单位名称" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+          </view>
+          <view class="item-margin">
+            <view class="input-label">申请人</view>
+            <input-item placeholder="请输入申请人" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+          </view>
+          <view class="item-margin">
+            <view class="input-label">手机号码</view>
+            <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+          </view>
+          <view class="item-margin">
+            <view class="input-label">验证码</view>
+            <verify-code data-field="verifyCode" onInput="onItemInput" value="{{verifyCode}}" label="" onClear="onClear" countDown="{{60}}" onSend="onSend"></verify-code>
+          </view>
+          <view class="item-margin">
+            <view class="input-label">施工时间段</view>
+            <input-item value="{{periodTime}}" placeholder="请选择施工时间段" disabled="true">
+              <view slot="extra" class="time-period" onTap="onPeriodTap"></view>
+            </input-item>
+          </view>
+          <view class="item-margin">
+            <view class="input-label">施工地址</view>
+            <input-item value="{{addressName}}" placeholder="请选择地址" disabled="true">
+              <view slot="extra" class="map-address" onTap="onAddressTap"></view>
+            </input-item>
+          </view>
+          <button class="btn-login" type="primary" onTap="onTest">提 交</button>
+        </view>
+      </tab-content>
+      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 1}}">
+        <view class="tab-content">
+          <view class="item-margin">
+            <view class="input-label">单位名称</view>
             <view style="margin-top: 10px;" />
             <input-item placeholder="请输入单位名称" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
           </view>
@@ -16,22 +49,14 @@
           <button class="btn-login" type="primary" onTap="onTest">提 交</button>
         </view>
       </tab-content>
-      <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 1}}">
-        <view class="tab-content">
-          <view class="item-margin">
-            <view class="input-label">手机号</view>
-            <view style="margin-top: 10px;" />
-            <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
-          </view>
-          <view class="item-margin">
-            <view style="margin-top: 10px;" />
-            <view class="input-label">验证码</view>
-            <view style="margin-top: 10px;" />
-            <verify-code data-field="verifyCode" onInput="onItemInput" value="{{verifyCode}}" label="" onClear="onClear" countDown="{{60}}" onSend="onSend"></verify-code>
-          </view>
-          <button class="btn-login" type="primary" onTap="onTest">提 交</button>
-        </view>
-      </tab-content>
     </block>
   </tabs>
 </view>
+<!-- 弹窗 时间段选择 -->
+<popup show="{{periodShow}}" position="bottom" onClose="onPopupClose">
+  <view class="box bottom">
+    <view>
+      <calendar type="range" haveYear="{{true}}" onSelect="onPeriodSelect"/>
+    </view>
+  </view>
+</popup>

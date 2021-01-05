@@ -96,5 +96,17 @@
 
 .input-label {
   font-weight: bolder;
-  margin-left: 12rpx;
+  /* margin-left: 12rpx; */
+}
+
+.am-input-content {
+  color: #919191;
+}
+
+.am-verify-code-content {
+  color: #919191;
+}
+
+.am-long-password-content {
+  color: #919191;
 }

@@ -1,9 +1,25 @@
 {
-  "current": null,
+  "current": 4,
   "modes": [
     {
       "title": "login",
       "page": "pages/login/login"
+    },
+    {
+      "title": "index",
+      "page": "pages/index/index"
+    },
+    {
+      "title": "company",
+      "page": "pages/company/company"
+    },
+    {
+      "title": "register",
+      "page": "pages/register/register"
+    },
+    {
+      "title": "work",
+      "page": "pages/work/work"
     }
   ]
 }

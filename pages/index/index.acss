@@ -1,12 +1,14 @@
-.demo-steps-class {
-  margin: 20px 0;
-  border-bottom: 1px solid #e5e5e5;
+/* API-DEMO page/API/choose-location/choose-location.acss */
+.page-body-info {
+  height: 250rpx;
 }
-.demo-btn-container {
+.page-body-text-location {
   display: flex;
-  justify-content: space-between;
-  margin: 20px;
+  font-size: 50rpx;
 }
-.demo-btn {
-  width: 47%;
+.page-body-text-location text {
+  margin: 10rpx;
+}
+.page-section-location-text{
+    color: #49a9ee;
 }
