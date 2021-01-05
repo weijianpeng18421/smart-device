@@ -5,15 +5,15 @@
         <view class="tab-content">
           <view class="item-margin">
             <view class="input-label">单位名称</view>
-            <input-item placeholder="请输入单位名称" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+            <input-item placeholder="请输入单位名称" value="" onInput="onInput"/>
           </view>
           <view class="item-margin">
             <view class="input-label">申请人</view>
-            <input-item placeholder="请输入申请人" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+            <input-item placeholder="请输入申请人" value="" onInput="onInput"/>
           </view>
           <view class="item-margin">
             <view class="input-label">手机号码</view>
-            <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+            <input-item placeholder="请输入手机号码" value="" onInput="onInput"/>
           </view>
           <view class="item-margin">
             <view class="input-label">验证码</view>
@@ -31,6 +31,18 @@
               <view slot="extra" class="map-address" onTap="onAddressTap"></view>
             </input-item>
           </view>
+          <view class="item-margin">
+            <view class="input-label">实际开工时间</view>
+            <input-item placeholder="请选择实际开工时间" value="{{realStartTime}}" onFocus="onFocusStart"/>
+          </view>
+          <view class="item-margin">
+            <view class="input-label">实际完工时间</view>
+            <input-item placeholder="请选择实际完工时间" value="{{realEndTime}}" onFocus="onFocusEnd"/>
+          </view>
+          <view class="item-margin">
+            <view class="input-label">审批时间</view>
+            <input-item placeholder="请选择审批时间" value="{{approveTime}}" onFocus="onApproveTime"/>
+          </view>
           <button class="btn-login" type="primary" onTap="onTest">提 交</button>
         </view>
       </tab-content>
@@ -39,12 +51,12 @@
           <view class="item-margin">
             <view class="input-label">单位名称</view>
             <view style="margin-top: 10px;" />
-            <input-item placeholder="请输入单位名称" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+            <input-item placeholder="请输入单位名称" value="" onInput="onInput" />
           </view>
           <view class="item-margin">
             <view class="input-label">设备编号</view>
             <view style="margin-top: 10px;" />
-            <input-item placeholder="请输入设备编号" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+            <input-item placeholder="请输入设备编号" value="" onInput="onInput"/>
           </view>
           <button class="btn-login" type="primary" onTap="onTest">提 交</button>
         </view>

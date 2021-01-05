@@ -6,7 +6,7 @@
           <view class="item-margin">
             <view class="input-label">手机号</view>
             <view style="margin-top: 10px;" />
-            <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+            <input-item placeholder="请输入手机号码" value="" onInput="onInput" />
           </view>
           <view class="item-margin">
             <view style="margin-top: 10px;" />
@@ -22,7 +22,7 @@
           <view class="item-margin">
             <view class="input-label">手机号</view>
             <view style="margin-top: 10px;" />
-            <input-item placeholder="请输入手机号码" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+            <input-item placeholder="请输入手机号码" value="" onInput="onInput" />
           </view>
           <view class="item-margin">
             <view style="margin-top: 10px;" />

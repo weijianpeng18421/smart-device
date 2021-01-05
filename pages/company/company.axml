@@ -7,19 +7,19 @@
       <view style="margin-top: 10px;" />
       <view class="input-label">单位名称</view>
       <view style="margin-top: 10px;" />
-      <input-item placeholder="请输入单位名称" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+      <input-item placeholder="请输入单位名称" value="" onInput="onInput" />
     </view>
     <view class="item-margin">
       <view style="margin-top: 10px;" />
       <view class="input-label">联系电话</view>
       <view style="margin-top: 10px;" />
-      <input-item placeholder="请输入联系电话" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+      <input-item placeholder="请输入联系电话" value="" onInput="onInput" />
     </view>
     <view class="item-margin">
       <view style="margin-top: 10px;" />
       <view class="input-label">注册人名</view>
       <view style="margin-top: 10px;" />
-      <input-item placeholder="请输入注册人名" value="" clear="{{true}}" onInput="onInput" onClear="onClear" />
+      <input-item placeholder="请输入注册人名" value="" onInput="onInput" />
     </view>
     <view class="item-margin">
       <view style="margin-top: 10px;" />

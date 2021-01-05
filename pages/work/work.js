@@ -12,6 +12,9 @@ Page({
     periodShow: false,
     periodTime: null,
     addressName: null,
+    realStartTime: null,
+    realEndTime: null,
+    approveTime: null,
   },
 
   // 切换tab
@@ -99,4 +102,53 @@ Page({
       },
     });
   },
+  // 开工时间
+  onFocusStart(e) {
+    var that = this
+    my.datePicker({
+      currentDate: util.getCurDate(),
+      startDate: '1800-01-01',
+      endDate: '2200-01-01',
+      success: (res) => {
+        that.setData({
+          realStartTime: res.date,
+        });
+      },
+      fail: (err) => {
+
+      }
+    });
+  },
+  // 完工时间
+  onFocusEnd(e) {
+    var that = this
+    my.datePicker({
+      currentDate: util.getCurDate(),
+      startDate: '1800-01-01',
+      endDate: '2200-01-01',
+      success: (res) => {
+        that.setData({
+          realEndTime: res.date,
+        });
+      },
+      fail: (err) => {
+
+      }
+    });
+  },
+  // 审批时间
+  onApproveTime(e) {
+    var that = this
+    my.optionsSelect({
+      title: "审批时间",
+      optionsOne: ["一个工作日", "三个工作日", "七个工作日", "三十个工作日", "一百五十个工作日", "三百六十个工作日"],
+      selectedOneIndex: 3,
+      success(res) {
+        console.log(res)
+        that.setData({
+          approveTime: res.selectedOneOption,
+        });
+      }
+    });
+  }
 });

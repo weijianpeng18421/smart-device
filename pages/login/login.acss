@@ -11,8 +11,8 @@
 }
 
 .am-tabs-content-wrap {
-  width: 80%;
-  margin: 20rpx 0 0 10%;
+  width: 90%;
+  margin: 20rpx 0 0 5%;
   border-radius: 20rpx;
 }
 
