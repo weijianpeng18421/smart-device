@@ -21,13 +21,13 @@
           </view>
           <view class="item-margin">
             <view class="input-label">施工时间段</view>
-            <input-item value="{{periodTime}}" placeholder="请选择施工时间段" disabled="true">
+            <input-item value="{{periodTime}}" placeholder="请选择施工时间段" onFocus="onPeriodTap">
               <view slot="extra" class="time-period" onTap="onPeriodTap"></view>
             </input-item>
           </view>
           <view class="item-margin">
             <view class="input-label">施工地址</view>
-            <input-item value="{{addressName}}" placeholder="请选择地址" disabled="true">
+            <input-item value="{{addressName}}" placeholder="请选择地址" onFocus="onAddressTap">
               <view slot="extra" class="map-address" onTap="onAddressTap"></view>
             </input-item>
           </view>
@@ -43,7 +43,7 @@
             <view class="input-label">审批时间</view>
             <input-item placeholder="请选择审批时间" value="{{approveTime}}" onFocus="onApproveTime"/>
           </view>
-          <button class="btn-login" type="primary" onTap="onTest">提 交</button>
+          <button class="btn-login" type="primary" onTap="onSubmit">提 交</button>
         </view>
       </tab-content>
       <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 1}}">
@@ -58,7 +58,7 @@
             <view style="margin-top: 10px;" />
             <input-item placeholder="请输入设备编号" value="" onInput="onInput"/>
           </view>
-          <button class="btn-login" type="primary" onTap="onTest">提 交</button>
+          <button class="btn-login" type="primary" onTap="onSubmit">提 交</button>
         </view>
       </tab-content>
     </block>

@@ -1,26 +1,45 @@
-// API-DEMO page/API/choose-location/choose-location.js
+
+const longitude = 106.221032;
+const latitude = 38.517746;
+const includePoints = [{
+  latitude: 38.517746,
+  longitude: 106.221032,
+}];
+
 Page({
   data: {
-    longitude: '120.126293',
-    latitude: '30.274653',
-    name: '黄龙万科中心',
-    address: '学院路77号',
+    scale: 14,
+    longitude,
+    latitude,
+    includePoints,
   },
-  chooseLocation() {
-    var that = this
-    my.chooseLocation({
-      success: (res) => {
-        console.log(JSON.stringify(res))
-        that.setData({
-          longitude: res.longitude,
-          latitude: res.latitude,
-          name: res.name,
-          address: res.address
-        })
-      },
-      fail: (error) => {
-        my.alert({ content: '调用失败：' + JSON.stringify(error), });
-      },
+  onReady() {
+    this.mapCtx = my.createMapContext('map');
+    this.demoPolyline();
+  },
+
+  demoPolyline() {
+    this.setData({
+      scale: 16,
+      longitude,
+      latitude,
+      polyline: [{
+        points: [{
+          latitude: 38.519746,
+          longitude: 106.221032,
+        }, {
+          latitude: 38.517746,
+          longitude: 106.221032,
+        }],
+        color: '#FF0000DD',
+        width: 10,
+        dottedLine: false,
+        iconPath: "",
+        iconWidth: 10,
+      }],
     });
   },
-})
+  markertap(e) {
+    console.log(e)
+  }
+});

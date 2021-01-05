@@ -47,5 +47,9 @@ Page({
       againPassword: '',
     });
   },
+  // 下一步
+  onTapNext() {
+    my.navigateTo({ url: '../company/company' })
+  },
 
 });

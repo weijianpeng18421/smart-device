@@ -1,10 +1,11 @@
 {
   "pages": [
     "pages/work/work",
+    "pages/login/login",
+    
     "pages/my/my",
     "pages/company/company",
     "pages/register/register",
-    "pages/login/login",
     "pages/index/index"
   ],
   "window": {

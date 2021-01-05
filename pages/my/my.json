@@ -1,4 +1,8 @@
 {
   "defaultTitle": "我的信息",
-  "usingComponents": {}
+  "usingComponents": {
+    "flex": "mini-ali-ui/es/flex/index",
+    "flex-item": "mini-ali-ui/es/flex/flex-item/index",
+    "title": "mini-ali-ui/es/title/index"
+  }
 }

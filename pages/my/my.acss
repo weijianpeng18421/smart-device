@@ -1,0 +1,42 @@
+.content {
+  width: 100%;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  width: 82%;
+  margin: 23% 0 0 5%;
+  border-radius: 20rpx;
+  padding: 30rpx;
+  height: 70vh;
+}
+
+.style-head {
+  position: absolute;
+  width: 150rpx;
+  height: 150rpx;
+  background-color: #c0c0c0;
+  border-radius: 50%;
+  top: 100rpx;
+}
+
+.style-info {
+  margin-top: 80rpx;
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+.style-list {
+  margin-top: 50rpx;
+}
+
+.style-item {
+  border: 1rpx solid #8d8b8b;
+  border-radius: 15rpx;
+  margin-top: 50rpx;
+}
+
+.am-title {
+  padding: 20rpx;
+  color: #4b4b4b;
+}

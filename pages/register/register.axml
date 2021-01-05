@@ -27,6 +27,6 @@
       <view style="margin-top: 10px;" />
       <long-password placeholder="请确认密码" value="{{againPassword}}" clear="{{true}}" onInput="onAgainInputPassword" onClear="onAgainClearPassword" />
     </view>
-    <button class="btn-login" type="primary" onTap="onTest">下 一 步</button>
+    <button class="btn-login" type="primary" onTap="onTapNext">下 一 步</button>
   </view>
 </view>

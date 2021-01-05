@@ -1,3 +1,38 @@
-<view>
-  New Page
+<view class="content">
+  <view class="bg-white">
+    <!-- 头像 -->
+    <view>
+      <flex justify="center">
+        <image class="style-head" src="../../static/head.jpg"/>
+      </flex>
+    </view>
+    <!-- 信息 -->
+    <view class="style-info">
+      <flex justify="center">
+        <view class="placeholder inline">王麻子</view>
+      </flex>
+      <view style="margin-top:40rpx;">
+        <flex justify="center">
+          <view class="placeholder inline">单位名称：非凡智慧（宁夏）科技有限公司</view>
+        </flex>
+      </view>
+      <view style="margin-top:10rpx;">
+        <flex justify="center">
+          <view class="placeholder inline">联系电话：176****3559</view>
+        </flex>
+      </view>
+    </view>
+    <!-- 列表 -->
+    <view class="style-list">
+      <view class="style-item">
+        <title iconURL="../../static/road.png" type="arrow">施工路段</title>
+      </view>
+      <view class="style-item">
+        <title iconURL="../../static/device.png" type="arrow" onActionTap="titleGo">我的设备</title>
+      </view>
+      <view class="style-item" onTap="exitLogin">
+        <title iconURL="../../static/exit.png" type="arrow">退出登录</title>
+      </view>
+    </view>
+  </view>
 </view>

@@ -14,7 +14,7 @@
             <view style="margin-top: 10px;" />
             <verify-code data-field="verifyCode" onInput="onItemInput" value="{{verifyCode}}" label="" onClear="onClear" countDown="{{60}}" onSend="onSend"></verify-code>
           </view>
-          <button class="btn-login" type="primary" onTap="onTest">登 录</button>
+          <button class="btn-login" type="primary" onTap="onLogin">登 录</button>
         </view>
       </tab-content>
       <tab-content key="{{index}}" tabId="{{index}}" activeTab="{{activeTab}}" a:elif="{{index === 1}}">
@@ -30,7 +30,7 @@
             <view style="margin-top: 10px;" />
             <long-password placeholder="请输入密码" value="{{longPassword}}" clear="{{true}}" onInput="onInputPassword" onClear="onClearPassword" />
           </view>
-          <button class="btn-login" type="primary" onTap="onTest">登 录</button>
+          <button class="btn-login" type="primary" onTap="onLogin">登 录</button>
         </view>
       </tab-content>
     </block>
@@ -39,7 +39,7 @@
     <view class="style-forget">
     忘记密码
     </view>
-    <view class="style-registered">
+    <view class="style-registered" onTap="onRegister">
     立即注册
     </view>
   </view>

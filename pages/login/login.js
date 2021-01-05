@@ -60,5 +60,13 @@ Page({
       longPassword: '',
     });
   },
+  // 登录
+  onLogin() {
+    my.switchTab({ url: '../work/work' });
+  },
+  // 注册
+  onRegister() {
+    my.navigateTo({ url: '../register/register' })
+  },
 
 });

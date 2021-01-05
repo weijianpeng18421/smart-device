@@ -91,6 +91,7 @@ Page({
     var that = this
     my.chooseLocation({
       success: (res) => {
+        console.log(res)
         that.setData({
           addressName: res.address,
         })

@@ -1,9 +1,7 @@
 var maxUploadCount = 4//最大上传四张照片 为了控制不出界
 Page({
   data: {
-    imagesList: [
-      'https://img.alicdn.com/tps/TB1sXGYIFXXXXc5XpXXXXXXXXXX.jpg',
-      'https://img.alicdn.com/tps/TB1pfG4IFXXXXc6XXXXXXXXXXXX.jpg'],
+    imagesList: [],
   },
   // 选择照片
   chooseImage(e) {
@@ -42,5 +40,9 @@ Page({
       imagesList: that.data.imagesList
     })
   },
+  // 确定
+  onTapEnter() {
+    my.redirectTo({ url: '../login/login' })
+  }
 
 });

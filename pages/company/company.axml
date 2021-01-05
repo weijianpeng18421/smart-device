@@ -36,6 +36,6 @@
         </flex>
       </view>
     </view>
-    <button class="btn-login" type="primary" onTap="onTest">确 定</button>
+    <button class="btn-login" type="primary" onTap="onTapEnter">确 定</button>
   </view>
 </view>
