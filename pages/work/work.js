@@ -16,6 +16,9 @@ Page({
     realEndTime: null,
     approveTime: null,
   },
+  onReady() {
+
+  },
 
   // 切换tab
   handleTabClick({ index, tabsName }) {

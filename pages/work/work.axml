@@ -50,12 +50,10 @@
         <view class="tab-content">
           <view class="item-margin">
             <view class="input-label">单位名称</view>
-            <view style="margin-top: 10px;" />
             <input-item placeholder="请输入单位名称" value="" onInput="onInput" />
           </view>
           <view class="item-margin">
             <view class="input-label">设备编号</view>
-            <view style="margin-top: 10px;" />
             <input-item placeholder="请输入设备编号" value="" onInput="onInput"/>
           </view>
           <button class="btn-login" type="primary" onTap="onSubmit">提 交</button>

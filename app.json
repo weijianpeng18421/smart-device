@@ -1,15 +1,18 @@
 {
   "pages": [
-    "pages/work/work",
     "pages/login/login",
-    
+    "pages/work/work",
     "pages/my/my",
     "pages/company/company",
     "pages/register/register",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/road/road",
+    "pages/device/device"
   ],
   "window": {
-    "defaultTitle": "道路维修上报"
+    "defaultTitle": "道路维修上报",
+    "pullRefresh": false,
+    "allowsBounceVertical": false
   },
   "tabBar": {
     "textColor": "#dddddd",

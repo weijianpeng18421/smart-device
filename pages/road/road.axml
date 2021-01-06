@@ -1,0 +1,57 @@
+<view class="content">
+  <view class="title">
+    施工路段
+  </view>
+  <view class="bg-white">
+    <view>
+      <coupon title="清水北街" subtitle="银川国际交流中心" onCouponClick="onCouponClick" thumb="{{thumb}}" moreBtn= "查看详情">
+        <view slot="category" class="categoryDemo">
+          <image class="head" src="../../static/head.jpg"></image>
+          <text class="name">王麻子</text>
+        </view>
+        <view class="check-states refuse" shape="capsule" slot="action" onTap="onButtonTap">审核被拒</view>
+        <view slot="date">审核日期：2020.02.14</view>
+        <view slot="detail" class="coupon_rule">
+          <text>1、审核不通过时的原因；</text>
+          <text>2、施工道路详细说明；</text>
+        </view>
+      </coupon>
+      <coupon title="上海路" subtitle="万达中心" onCouponClick="onCouponClick" thumb="{{thumb}}" moreBtn= "查看详情">
+        <view slot="category" class="categoryDemo">
+          <image class="head" src="../../static/address.png"></image>
+          <text class="name">张三</text>
+        </view>
+        <view class="check-states wait" shape="capsule" slot="action" onTap="onButtonTap">等待审核</view>
+        <view slot="date">日期：2020.02.14</view>
+        <view slot="detail" class="coupon_rule">
+          <text>1、审核不通过时的原因；</text>
+          <text>2、施工道路详细说明；</text>
+        </view>
+      </coupon>
+      <coupon title="北京中路" subtitle="银川国际会展中心" onCouponClick="onCouponClick" thumb="{{thumb}}" moreBtn= "查看详情">
+        <view slot="category" class="categoryDemo">
+          <image class="head" src="../../static/ali.jpg"></image>
+          <text class="name">李四</text>
+        </view>
+        <view class="check-states agree" shape="capsule" slot="action" onTap="onButtonTap">审核通过</view>
+        <view slot="date">日期：2020.02.14</view>
+        <view slot="detail" class="coupon_rule">
+          <text>1、审核不通过时的原因；</text>
+          <text>2、施工道路详细说明；</text>
+        </view>
+      </coupon>
+      <coupon title="清水北街" subtitle="银川国际交流中心" onCouponClick="onCouponClick" thumb="{{thumb}}" moreBtn= "查看详情">
+        <view slot="category" class="categoryDemo">
+          <image class="head" src="../../static/head.jpg"></image>
+          <text class="name">王麻子</text>
+        </view>
+        <view class="check-states agree" shape="capsule" slot="action" onTap="onButtonTap">审核通过</view>
+        <view slot="date">日期：2020.02.14</view>
+        <view slot="detail" class="coupon_rule">
+          <text>1、审核不通过时的原因；</text>
+          <text>2、施工道路详细说明；</text>
+        </view>
+      </coupon>
+    </view>
+  </view>
+</view>

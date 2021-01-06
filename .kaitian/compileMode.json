@@ -1,5 +1,5 @@
 {
-  "current": 1,
+  "current": null,
   "modes": [
     {
       "title": "login",
@@ -24,6 +24,14 @@
     {
       "title": "my",
       "page": "pages/my/my"
+    },
+    {
+      "title": "road",
+      "page": "pages/road/road"
+    },
+    {
+      "title": "device",
+      "page": "pages/device/device"
     }
   ]
 }

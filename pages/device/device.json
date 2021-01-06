@@ -1,0 +1,7 @@
+{
+  "defaultTitle": "我的设备",
+  "usingComponents": {
+    "coupon": "mini-ali-ui/es/coupon/index",
+    "button": "mini-ali-ui/es/button/index"
+  }
+}

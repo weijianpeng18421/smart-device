@@ -1,0 +1,106 @@
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  color: #ffffff;
+  margin: 40rpx 0 0 80rpx;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  width: 90%;
+  margin: 20rpx 0 0 4%;
+  border-radius: 20rpx;
+  padding: 20rpx;
+}
+
+/* 以下每条数据的样式 */
+
+.am-coupon {
+  margin: 20rpx 5rpx;
+  box-shadow: 10rpx 10rpx 20rpx #b3b3b3;
+  border-radius: 10rpx;
+}
+
+.coupon_rule text {
+  display: block;
+  margin-bottom: 8rpx;
+}
+
+.categoryDemo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: baseline;
+  align-self: flex-start;
+}
+
+.categoryDemo .name {
+  text-align: center;
+  font-size: 25rpx;
+  color: rgb(82, 81, 81);
+  margin-top: 40rpx;
+}
+
+.head {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+/* 隐藏中间空缺半圆（注释里面的内容看效果） */
+
+.am-coupon-divider-upper-hole {
+  height: 0;
+  margin-top: 0;
+}
+
+.am-coupon-divider-lower-hole {
+  height: 0;
+  margin-bottom: 0;
+}
+
+.am-coupon-thumb {
+  width: 120rpx;
+  padding: 30rpx 0 30rpx 0;
+}
+
+.am-coupon-content {
+  border-left: 1px solid #999;
+  padding: 30rpx 15rpx;
+}
+
+.am-coupon-content-detail {
+  padding-top: 15rpx;
+}
+
+.am-coupon-content-text-subtitle {
+  width: 310rpx !important;
+}
+
+.check-states {
+  width: 150rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  font-size: 25rpx;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.refuse {
+  color: rgb(223, 20, 20);
+  border: 2rpx solid rgb(223, 20, 20);
+}
+
+.wait {
+  color: rgb(250, 171, 0);
+  border: 2rpx solid rgb(250, 171, 0);
+}
+
+.agree {
+  color: rgb(0, 255, 150);
+  border: 2rpx solid rgb(0, 255, 150);
+}

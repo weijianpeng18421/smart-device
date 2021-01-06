@@ -1,0 +1,64 @@
+<view class="content">
+  <view class="title">
+    我的设备
+  </view>
+  <view class="bg-white">
+    <!-- 没有设备时 -->
+    <view class="have-device" a:if="{{haveDevice}}">
+      <view>
+        <coupon title="设备编号" subtitle="45765465425814" onCouponClick="onCouponClick" extra="{{false}}">
+          <button shape="capsule" slot="action" onTap="onTapLookIOT" type="ghost" data-number="0">查看位置</button>
+          <button shape="capsule" slot="action" type="warn">使用中</button>
+          <view slot="date">有效期：2020.02.14-2021.02.14</view>
+          <view slot="detail" class="coupon_rule">
+            <text>1、智能锥桶的一些详细说明；</text>
+            <text>2、智能锥桶的一些详细说明；</text>
+            <text>3、智能锥桶的一些详细说明；</text>
+          </view>
+        </coupon>
+      </view>
+      <view>
+        <coupon title="设备编号" subtitle="56456454949849" onCouponClick="onCouponClick" extra="{{false}}">
+          <button shape="capsule" slot="action" type="primary">设备闲中</button>
+          <view slot="date">有效期：2020.02.14-2021.02.14</view>
+          <view slot="detail" class="coupon_rule">
+            <text>1、智能锥桶的一些详细说明；</text>
+            <text>2、智能锥桶的一些详细说明；</text>
+            <text>3、智能锥桶的一些详细说明；</text>
+          </view>
+        </coupon>
+      </view>
+      <view>
+        <coupon title="设备编号" subtitle="45765465425814" onCouponClick="onCouponClick" extra="{{false}}">
+          <button shape="capsule" slot="action" onTap="onTapLookIOT" type="ghost" data-number="1">查看位置</button>
+          <button shape="capsule" slot="action" type="warn">使用中</button>
+          <view slot="date">有效期：2020.02.14-2021.02.14</view>
+          <view slot="detail" class="coupon_rule">
+            <text>1、智能锥桶的一些详细说明；</text>
+            <text>2、智能锥桶的一些详细说明；</text>
+            <text>3、智能锥桶的一些详细说明；</text>
+          </view>
+        </coupon>
+      </view>
+      <view>
+        <coupon title="设备编号" subtitle="45765465425814" onCouponClick="onCouponClick" extra="{{false}}">
+          <button shape="capsule" slot="action" onTap="onTapLookIOT" type="ghost" data-number="1">查看位置</button>
+          <button shape="capsule" slot="action" type="warn">使用中</button>
+          <view slot="date">有效期：2020.02.14-2021.02.14</view>
+          <view slot="detail" class="coupon_rule">
+            <text>1、智能锥桶的一些详细说明；</text>
+            <text>2、智能锥桶的一些详细说明；</text>
+            <text>3、智能锥桶的一些详细说明；</text>
+          </view>
+        </coupon>
+      </view>
+    </view>
+    <!-- 有设备时 -->
+    <view class="no-device" a:else>
+      <view class="device-no-tips">暂无设备</view>
+      <button class="btn-login" type="primary" size="mini" onTap="onTapNext">添 加</button>
+      <view class="shop-style">
+        <view class="shop-style-item">设备购买方式：拨打电话或小程序商城购买</view>
+        <view class="shop-style-item">设备购买电话：176****3559</view></view></view>
+  </view>
+</view>

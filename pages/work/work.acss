@@ -3,11 +3,10 @@
   align-items: center;
   padding: 40rpx;
   box-sizing: border-box;
-  /* height: 80vh; */
 }
 
 .content {
-  margin-top: 2vh;
+  margin: 20rpx 0;
 }
 
 .am-tabs-content-wrap {
@@ -55,25 +54,6 @@
 
 .input-label {
   font-weight: bolder;
-  font-size: 25rpx;
-  /* margin-left: 12rpx; */
-}
-
-.am-input-line {
-  min-height: 70rpx;
-}
-
-.am-input-content {
-  font-size: 25rpx;
-}
-
-.am-verify-code-line {
-  min-height: 70rpx;
-  /* font-size: 20rpx; */
-}
-
-.am-verify-code-content {
-  font-size: 25rpx;
 }
 
 /* 施工时间段 */
@@ -111,7 +91,7 @@
 /******************************************************** 以下底部弹窗样式 ********************************************************/
 
 .box.bottom {
-  height: 800rpx;
+  height: 1000rpx;
 }
 
 .box {

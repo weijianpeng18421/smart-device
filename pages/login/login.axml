@@ -5,13 +5,10 @@
         <view class="tab-content">
           <view class="item-margin">
             <view class="input-label">手机号</view>
-            <view style="margin-top: 10px;" />
             <input-item placeholder="请输入手机号码" value="" onInput="onInput" />
           </view>
           <view class="item-margin">
-            <view style="margin-top: 10px;" />
             <view class="input-label">验证码</view>
-            <view style="margin-top: 10px;" />
             <verify-code data-field="verifyCode" onInput="onItemInput" value="{{verifyCode}}" label="" onClear="onClear" countDown="{{60}}" onSend="onSend"></verify-code>
           </view>
           <button class="btn-login" type="primary" onTap="onLogin">登 录</button>
@@ -21,13 +18,10 @@
         <view class="tab-content">
           <view class="item-margin">
             <view class="input-label">手机号</view>
-            <view style="margin-top: 10px;" />
             <input-item placeholder="请输入手机号码" value="" onInput="onInput" />
           </view>
           <view class="item-margin">
-            <view style="margin-top: 10px;" />
             <view class="input-label">密码</view>
-            <view style="margin-top: 10px;" />
             <long-password placeholder="请输入密码" value="{{longPassword}}" clear="{{true}}" onInput="onInputPassword" onClear="onClearPassword" />
           </view>
           <button class="btn-login" type="primary" onTap="onLogin">登 录</button>

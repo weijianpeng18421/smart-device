@@ -24,11 +24,11 @@
     </view>
     <!-- 列表 -->
     <view class="style-list">
-      <view class="style-item">
+      <view class="style-item" onTap="enterRoad">
         <title iconURL="../../static/road.png" type="arrow">施工路段</title>
       </view>
-      <view class="style-item">
-        <title iconURL="../../static/device.png" type="arrow" onActionTap="titleGo">我的设备</title>
+      <view class="style-item" onTap="enterDevice">
+        <title iconURL="../../static/device.png" type="arrow">我的设备</title>
       </view>
       <view class="style-item" onTap="exitLogin">
         <title iconURL="../../static/exit.png" type="arrow">退出登录</title>

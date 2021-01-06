@@ -3,16 +3,16 @@
   align-items: center;
   padding: 40rpx;
   box-sizing: border-box;
-  height: 50%;
+  /* height: 50%; */
 }
 
 .content {
-  margin-top: 20%;
+  margin-top: 20rpx;
 }
 
 .am-tabs-content-wrap {
   width: 90%;
-  margin: 20rpx 0 0 5%;
+  margin: 10rpx 0 0 5%;
   border-radius: 20rpx;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .am-verify-code-label {
-  min-width: 0px;
+  min-width: 0;
 }
 
 .am-verify-code-item {
@@ -35,10 +35,10 @@
 }
 
 .btn-login {
-  margin: 35px 0;
-  border-radius: 5px;
+  margin: 20rpx 0;
+  border-radius: 20rpx;
   background: linear-gradient(to bottom, rgb(58, 116, 241), #6799FE);
-  box-shadow: 8px 6px 20px #6799FE, inset 5px -5px 30px rgb(58, 116, 241);
+  box-shadow: 12rpx 12rpx 30rpx #6799FE, inset -12rpx -12rpx 30rpx rgb(58, 116, 241);
 }
 
 .am-long-password-item {
@@ -46,20 +46,20 @@
 }
 
 .item-margin {
-  margin-top: 30px;
+  margin-top: 30rpx;
 }
 
 .forget-registered {
   display: flex;
   width: 100px;
   color: #ffffff;
-  font-size: 15px;
-  margin: 25px 0;
+  font-size: 30rpx;
+  margin: 40rpx 0;
 }
 
 .style-forget {
   position: absolute;
-  left: 70px;
+  left: 70rpx;
 }
 
 .style-forget:active {
@@ -68,7 +68,7 @@
 
 .style-registered {
   position: absolute;
-  right: 70px;
+  right: 70rpx;
 }
 
 .style-registered:active {
@@ -76,27 +76,27 @@
 }
 
 .ali-login {
-  margin-top: 40px;
+  margin-top: 100rpx;
   color: #ffffff;
-  font-size: 13px;
+  font-size: 30rpx;
 }
 
 .icon-ali {
-  width: 40px;
-  height: 40px;
-  margin-top: 10px;
-  border-radius: 7.5px;
+  width: 90rpx;
+  height: 90rpx;
+  margin-top: 30rpx;
+  border-radius: 17rpx;
 }
 
 .icon-ali:active {
-  width: 42px;
-  height: 42px;
+  width: 100rpx;
+  height: 100rpx;
   transition: 0.2s;
 }
 
 .input-label {
   font-weight: bolder;
-  /* margin-left: 12rpx; */
+  margin-top: 35rpx;
 }
 
 .am-input-content {

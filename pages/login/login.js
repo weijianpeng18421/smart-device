@@ -10,6 +10,9 @@ Page({
     ],
     longPassword: '',
   },
+  onReady() {
+    console.log("-----------准备登陆------------")
+  },
 
   // 切换tab
   handleTabClick({ index, tabsName }) {
